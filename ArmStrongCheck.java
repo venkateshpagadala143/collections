@@ -7,11 +7,6 @@ public class ArmStrongCheck {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter your number");
 		int num = sc.nextInt();
-		checkArmStrong(num);
-		}
-	
-
-	private static void checkArmStrong(int num) {
 		int temp = num;
 		int arm = 0;
 		while (num > 0) {
@@ -28,7 +23,6 @@ public class ArmStrongCheck {
 			System.out.println(arm);
 		System.out.println("this is not armstrong number");
 		}
-		
 	}
 
 }
