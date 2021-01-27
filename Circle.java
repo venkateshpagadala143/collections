@@ -1,38 +1,22 @@
-package absractDemo_Shape;
+package com.ojas.cirlcle;
 
-public class Circle extends Shape {
-	float radius;
+public class Circle {
+	double radius;
 
-	public Circle(float radius) {
+	public Circle(double radius) {
 		super();
 		this.radius = radius;
 	}
-
 	public Circle() {
-
-	}
-
-	public float getRadius() {
-		return radius;
-	}
-
-	public void setRadius(float radius) {
-		this.radius = radius;
-	}
-
-	@Override
-	void getArea() {
-		float area=(22/7)*(radius*radius);
-		System.out.println("Area of Circle is : "+area);
-
-	}
-
-	@Override
-	void getParameter() {
-		float parameter=2*(22/7)*radius;
-		System.out.println("Parameter of Circle is : "+parameter);
 		
-
+	}
+	double getArea(){
+		if(radius<1) {
+			return -1;
+		}else {
+		double area=2*3.141*radius;
+		return area;
+		}
 	}
 
 }
