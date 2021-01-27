@@ -1,4 +1,4 @@
-package com.ojas;
+package com.ojas.practice;
 
 public class RussianMultiplication {
 

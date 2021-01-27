@@ -1,4 +1,4 @@
-package com.ojas;
+package com.String;
 
 import java.util.Scanner;
 

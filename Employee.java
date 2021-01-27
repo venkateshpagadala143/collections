@@ -1,9 +1,10 @@
-package InheritenceDemo3;
+package _29_12_02020_IOStream;
 
 public class Employee {
-	static int empId;
-	static String empName;
-	static double empSalary;
+	private int empId;
+	private String empName;
+	private String empDesignation;
+	private double empSalary;
 	public int getEmpId() {
 		return empId;
 	}
@@ -16,25 +17,32 @@ public class Employee {
 	public void setEmpName(String empName) {
 		this.empName = empName;
 	}
+	public String getEmpDesignation() {
+		return empDesignation;
+	}
+	public void setEmpDesignation(String empDesignation) {
+		this.empDesignation = empDesignation;
+	}
 	public double getEmpSalary() {
 		return empSalary;
 	}
 	public void setEmpSalary(double empSalary) {
 		this.empSalary = empSalary;
 	}
-	public Employee(int empId, String empName, double empSalary) {
+	public Employee(int empId, String empName, String empDesignation, double empSalary) {
 		super();
 		this.empId = empId;
 		this.empName = empName;
+		this.empDesignation = empDesignation;
 		this.empSalary = empSalary;
 	}
-	public Employee() {
-		
-	}
-	@Override
-	public String toString() {
-		return "Employee [empId=" + empId + ", empName=" + empName + ", empSalary=" + empSalary + "]";
-	}
+public Employee() {
 	
+}
+@Override
+public String toString() {
+	return "empId=" + empId + ", empName=" + empName + ", empDesignation=" + empDesignation + ", empSalary="
+			+ empSalary + "";
+}
 
 }
